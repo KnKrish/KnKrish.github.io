@@ -2,14 +2,54 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<h1>My Bio</h1>
-<h3>My name is XYZ, I work at ABC and This is my 1st webPage; more info coming up...</h3>
-
 <body>
+ <div class="container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="box skyblue"> My Bio</div>
+      </div>
+      <div class="col-md-3">
+        <div class="box skyblue">My Interests</div>
+      </div>
+      <div class="col-md-3">
+        <div class="box skyblue">My Contributions</div>
+      </div>
+      <div class="col-md-3">
+        <div class="box skyblue">My Contact</div>
+      </div>
+    </div>
 
+    <div class="row">
+            <div class="col-md-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+            </div>
+ 
+    </div>
+
+    <div class="row">
+            <div class="col-xs-3 col-sm-6 col-md-12">
+              <div class="box red">In flight project I</div>
+              <p>Most smart home devices come with an app for control via smartphone or tablet. Am building one cool product for YOU ! See my contact for pre-order !
+              </p>
+            </div>
+            <div class="col-xs-3 col-sm-6 col-md-12">
+              <div class="box red">In flight project II</div>
+              <p> Implementing RPA in organisation to shrink global workforce by 70% !
+                </p>
+            </div>
+            <div class="col-xs-3 col-sm-6 col-md-12">
+              <div class="box red">In flight project III</div>
+                <p> Building ML application!
+                </p>
+          </div>
+        </div>
+</div>
 </body>
 
 </html>
